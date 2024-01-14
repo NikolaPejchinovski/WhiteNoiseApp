@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="play.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise Machine</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1 class="logo">Noise Machine</h1>
+            <h3 class="quote">Quote is loading...</h3>
+        </div>
+    </header>
+    <div class="container">
+        <div class="stopwatch-wrapper">
+            <div class="hover-message">
+                <p class="message">You've been productive for:</p>
+            </div>
+            <p><span id="hours">00</span><span id="minutes">00</span>:<span id="seconds">00</span><span id="tens">00</span></p>
+        </div> 
+        <audio src="noises/whitenoise.mp3" id="whitenoise"></audio>
+        <div class="waveform">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1 class="title">White Noise</h1>
+        <footer>
+            <div class="buttons">
+                <div id="volume-down"></div>
+                <div id="play"></div>
+                <div id="volume-up"></div>
+            </div>
+        </footer>
+    </div>
+        <!-- <img src="img/rain.jpg" alt="" class="rain"> -->
+    <!-- <h2 class="subtitle">Unleash your productivity.</h2> -->
+    <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

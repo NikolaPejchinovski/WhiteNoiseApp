@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+
+:root {
+    --bg-color: #5465FF;
+    --less-important-text: #BFD7FF;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.daily-quote {
+    color: var(--less-important-text);
+    font-size: 16px;
+    max-width: 350px;
+    text-align: center;
+}
+
+.container {
+    margin: 59px 0px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.noiseBox {
+    width: 263px;
+    height: 263px;
+    border-radius: 45px;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    transition: transform 0.3s ease;
+}
+
+.noiseBox:hover {
+    transform: scale(1.05);
+}
+
+.noiseBox:active {
+    transform: scale(0.98);
+}
+
+.noiseBox img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.noiseBox img:hover {
+    opacity: 1;
+}
+
+.noiseTitle {
+    position: absolute;
+    top: 30px;
+    left: 18px;
+    color: white;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 59px;
+    font-weight: 400;
+}
