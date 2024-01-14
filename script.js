@@ -14,7 +14,7 @@ let tens = '00';
 randomQuote();
 
 //This takes the noise name which also is the page name. It allows me to put everything in the same js file
-let noiseToPlayId = location.pathname.substring(1, location.pathname.lastIndexOf('.'));
+let noiseToPlayId = location.pathname.substring(location.pathname.lastIndexOf('/'), location.pathname.lastIndexOf('.'));
 console.log(noiseToPlayId);
 const noiseToPlay = document.getElementById(noiseToPlayId);
 
