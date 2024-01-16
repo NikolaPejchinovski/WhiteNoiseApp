@@ -170,11 +170,22 @@ body {
  #home {
     font-size: 30px;
     color: white;
+    transition: 0.3s ease;
  }
 
  #reset {
     font-size: 35px;
     color: white;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+ }
+
+ #reset:hover {
+    transform: rotate(-360deg);
+ }
+
+ #home:hover {
+    transform: scale(1.1);
  }
 
  .volume-container {
