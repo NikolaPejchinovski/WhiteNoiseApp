@@ -2,32 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noise Machine</title>
+    <title>Productively</title>
 </head>
 <body>
-    <h1 class="title">Noise Machine</h1>
-    <!-- <h3 class="daily-quote">Productivity is being able to do things that you were never able to do before.” – Franz Kafka.</h3> -->
-    <h2 class="subtitle">Choose your noise.</h2>
-    <div class="container">
-        <div class="noiseBox" id="whiterain">
-            <img src="img/rain.jpg" alt="">
-            <h3 class="noiseTitle">White Rain</h3>
-        </div>
-        <div class="noiseBox" id="jazz">
-            <img src="img/jazz.jpg" alt="">
-            <h3 class="noiseTitle">Jazz</h3>
-        </div>
-        <div class="noiseBox" id=" fire">
-            <img src="img/fire.jpg" alt="">
-            <h3 class="noiseTitle">Fire</h3>
-        </div>
-        <div class="noiseBox" id="whitenoise">
-            <img src="img/whitenoise.jpg" alt="">
-            <h3 class="noiseTitle">White Noise</h3>
-        </div>
-    </div>
+    <header>
+        <h1 class="title"><i class="fa-regular fa-hourglass" style="margin-right: 14px;"></i>Productively</h1>
+        <h3 class="quote">Quote Loading...</h3>
+    </header>
+    <main>
+        <button class="saved-sounds">Saved</button>
+        <h2 class="tagline">Unleash your productivity</h2>
+        <div class="container">
+            <div class="noiseBox" id="whiterain">
+                <img src="img/rain.jpg" alt="">
+                <h3 class="noiseTitle">White Rain</h3>
+                <small class="sound-desc">White rain is a type of white noise or alternative
+                     to it which is a sound that contains all audible frequencies in equal intensity.</small>
+                <div class="save-btn active">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+            </div>
+            <div class="noiseBox" id="jazz">
+                <img src="img/jazz.jpg" alt="">
+                <h3 class="noiseTitle">Jazz</h3>
+                <small class="sound-desc">Indulge in the smooth melodies of jazz, a soulful escape for a timeless ambiance.</small>
+                <div class="save-btn">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+            </div>
+            <div class="noiseBox" id=" fire">
+                <img src="img/fire.jpg" alt="">
+                <h3 class="noiseTitle">Fire</h3>
+                <small class="sound-desc">Enjoy the tranquility of white noise, 
+                    masking distractions for a serene retreat in any space. Science Approved</small>
+                    <div class="save-btn">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <i class="fa-solid fa-bookmark"></i>
+                    </div>
+            </div>
+            <div class="noiseBox" id="whitenoise">
+                <img src="img/whitenoise.jpg" alt="">
+                <h3 class="noiseTitle">White Noise</h3>
+                <small class="sound-desc">White rain is a type of white noise or alternative
+                    to it which is a sound that contains all audible frequencies in equal intensity.</small>
+                    <div class="save-btn">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <i class="fa-solid fa-bookmark"></i>
+                    </div>
+            </div>
+            </div>
+    </main>
     <script type="module" src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
