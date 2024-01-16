@@ -16,6 +16,14 @@
         padding: 0 22px;
     }
 
+    .title {
+        font-size: 2em;
+    }
+
+    .title::after {
+        top: 45px;
+    }
+
     .logo {
         font-size: 2em;
     }
@@ -38,7 +46,7 @@
     }
 
     .noiseTitle {
-        bottom: 100px;
+        bottom: 120px;
     }
 
     .sound-desc {
@@ -51,7 +59,7 @@
     }
 
     .noiseBox img {
-        height: 75%;
+        height: 72%;
     }
 
     .tagline {
